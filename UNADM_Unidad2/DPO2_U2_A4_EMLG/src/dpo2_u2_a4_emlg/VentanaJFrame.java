@@ -5,6 +5,7 @@
  */
 package dpo2_u2_a4_emlg;
 
+import com.sun.jdi.connect.spi.Connection;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -15,7 +16,7 @@ import java.text.Normalizer.Form;
  */
 public class VentanaJFrame extends javax.swing.JFrame {
 
-  
+  private static Connection con;
     /**
      * Creates new form VentanaJFrame
      */
@@ -169,7 +170,8 @@ public class VentanaJFrame extends javax.swing.JFrame {
 
     private void jMenu9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu9ActionPerformed
         // TODO add your handling code here:
-        this.setVisible(false);
+        this.dispose(); 
+       
     }//GEN-LAST:event_jMenu9ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
